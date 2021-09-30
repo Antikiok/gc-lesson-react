@@ -1,5 +1,5 @@
 import ReactDOM from 'react-dom';
-import Search from 'search.jsx';
+import Search from 'Search.jsx';
 import './index.scss';
 import './search.scss';
 

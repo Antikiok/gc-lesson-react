@@ -18,5 +18,6 @@ module.exports = {
     'import/extensions': 0,
     'import/prefer-default-export': 0,
     'no-console': 0,
+    'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
   },
 };

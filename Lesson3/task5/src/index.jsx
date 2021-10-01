@@ -1,5 +1,12 @@
 import ReactDOM from 'react-dom';
 import React from 'react';
-import App from './App.jsx';
+import Profile from './Profile.jsx';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const userData = {
+  firstName: 'John',
+  lastName: 'Doe',
+  birthDate: '1991-01-17T11:11:11.819Z',
+  birthPlace: 'London',
+};
+
+ReactDOM.render(<Profile userInfo={userData} />, document.getElementById('root'));

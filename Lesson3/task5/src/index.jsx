@@ -1,6 +1,7 @@
 import ReactDOM from 'react-dom';
 import React from 'react';
 import Profile from './Profile.jsx';
+import './index.css';
 
 const userData = {
   firstName: 'John',

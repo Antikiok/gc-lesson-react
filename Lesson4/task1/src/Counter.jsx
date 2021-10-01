@@ -5,13 +5,13 @@ class Counter extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      counter: this.props.start,
+      counter: props.start,
     };
     setInterval(() => {
       this.setState({
         counter: this.state.counter + 1,
       });
-    }, 1000);
+    }, props.interval);
   }
 
   render() {

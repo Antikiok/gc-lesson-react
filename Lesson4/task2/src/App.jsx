@@ -5,23 +5,23 @@ import './index.scss';
 
 const cityLondon = {
   city: 'London',
-  time: 0,
+  GMT: 0,
 };
 
 const cityKyiv = {
   city: 'Kyiv',
-  time: 3,
+  GMT: 3,
 };
 const cityNewYork = {
   city: 'New York',
-  time: -4,
+  GMT: -4,
 };
 
 const App = () => (
   <>
-    <Clock location={cityLondon.city} offset={cityLondon.time} />
-    <Clock location={cityKyiv.city} offset={cityKyiv.time} />
-    <Clock location={cityNewYork.city} offset={cityNewYork.time} />
+    <Clock location={cityLondon.city} offset={cityLondon.GMT} />
+    <Clock location={cityKyiv.city} offset={cityKyiv.GMT} />
+    <Clock location={cityNewYork.city} offset={cityNewYork.GMT} />
   </>
 );
 

@@ -10,11 +10,11 @@ const cityLondon = {
 
 const cityKyiv = {
   city: 'Kyiv',
-  time: 2,
+  time: 3,
 };
 const cityNewYork = {
   city: 'New York',
-  time: -5,
+  time: -4,
 };
 
 const App = () => (

@@ -3,26 +3,20 @@ import Clock from './Clock.jsx';
 import './clock.scss';
 import './index.scss';
 
-const cityLondon = {
-  city: 'London',
-  GMT: 0,
+const city = {
+  location: '',
+  offset: null,
 };
 
-const cityKyiv = {
-  city: 'Kyiv',
-  GMT: 2,
+const App = () => {
+  const app = (
+    <>
+      <Clock location={(city.location = 'London')} offset={(city.offset = 0)} />
+      <Clock location={(city.location = 'Kyiv')} offset={(city.offset = 2)} />
+      <Clock location={(city.location = 'New York')} offset={(city.offset = -5)} />
+    </>
+  );
+  return app;
 };
-const cityNewYork = {
-  city: 'New York',
-  GMT: -5,
-};
-
-const App = () => (
-  <>
-    <Clock location={cityLondon.city} offset={cityLondon.GMT} />
-    <Clock location={cityKyiv.city} offset={cityKyiv.GMT} />
-    <Clock location={cityNewYork.city} offset={cityNewYork.GMT} />
-  </>
-);
 
 export default App;

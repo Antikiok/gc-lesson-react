@@ -7,14 +7,15 @@ const getTimeWithOffset = offset => {
   return new Date(currentTime.setHours(currentTime.getHours() + offset + utcOffset));
 };
 
-const formateTime = offset => moment(offset).format('h:mm:ss A');
+const formateTime = offset => moment(offset).format('LTS');
 const formatedOffsetTime = offset => formateTime(getTimeWithOffset(offset));
 
 class Clock extends React.Component {
   constructor(props) {
+    console.log(props);
     super(props);
     this.state = {
-      offset: props.offset,
+      offset: this.props.offset,
     };
 
     setInterval(() => {
@@ -25,6 +26,7 @@ class Clock extends React.Component {
   }
 
   render() {
+    console.log(this.state.offset);
     return (
       <div className="clock">
         <div className="clock__location">{this.props.location}</div>

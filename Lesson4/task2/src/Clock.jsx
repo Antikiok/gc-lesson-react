@@ -15,7 +15,7 @@ class Clock extends React.Component {
     console.log(props);
     super(props);
     this.state = {
-      offset: this.props.offset,
+      offset: formatedOffsetTime(this.props.offset),
     };
 
     setInterval(() => {

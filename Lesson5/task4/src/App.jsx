@@ -1,6 +1,6 @@
 import React from 'react';
-import GoodButton from './GoodButton.jsx';
+import Colors from './Colors.jsx';
 
-const App = () => <GoodButton />;
+const App = () => <Colors />;
 
 export default App;

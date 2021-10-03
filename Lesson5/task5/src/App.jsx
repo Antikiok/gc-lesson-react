@@ -1,6 +1,6 @@
 import React from 'react';
-import GoodButton from './GoodButton.jsx';
+import Toggler from './Toggler.jsx';
 
-const App = () => <GoodButton />;
+const App = () => <Toggler />;
 
 export default App;

@@ -5,6 +5,7 @@ class Toggler extends React.Component {
     super(props);
     this.state = {
       toggled: false,
+      text: 'Off',
     };
   }
   swithToggler = () => {
@@ -25,7 +26,7 @@ class Toggler extends React.Component {
       return (
         <>
           <button className={'fancy-button'} onClick={this.swithToggler}>
-            Off
+            {this.state.text}
           </button>
         </>
       );

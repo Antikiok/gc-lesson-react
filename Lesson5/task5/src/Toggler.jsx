@@ -17,7 +17,7 @@ class Toggler extends React.Component {
       return (
         <>
           <button className={'fancy-button'} onClick={this.swithToggler}>
-            Off
+            On
           </button>
         </>
       );
@@ -25,7 +25,7 @@ class Toggler extends React.Component {
       return (
         <>
           <button className={'fancy-button'} onClick={this.swithToggler}>
-            On
+            Off
           </button>
         </>
       );

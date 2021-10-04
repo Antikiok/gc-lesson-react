@@ -8,29 +8,28 @@ class Toggler extends React.Component {
       text: 'Off',
     };
   }
-  swithToggler = () => {
-    this.setState(state => ({
-      toggled: !state.toggled,
-    }));
-  };
-  render() {
+  swithToggler = state => {
     if (this.state.toggled) {
-      return (
-        <>
-          <button className={'fancy-button'} onClick={this.swithToggler}>
-            On
-          </button>
-        </>
-      );
+      this.setState(state => ({
+        toggled: !state.toggled,
+        text: 'On',
+      }));
     } else {
-      return (
-        <>
-          <button className={'fancy-button'} onClick={this.swithToggler}>
-            {this.state.text}
-          </button>
-        </>
-      );
+      this.setState(state => ({
+        toggled: !state.toggled,
+        text: 'Off',
+      }));
     }
+  };
+
+  render() {
+    return (
+      <>
+        <button className={'fancy-button'} onClick={this.swithToggler}>
+          {this.state.text}
+        </button>
+      </>
+    );
   }
 }
 

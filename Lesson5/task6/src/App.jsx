@@ -1,6 +1,6 @@
 import React from 'react';
-import GoodButton from './GoodButton.jsx';
+import ColorPicker from './ColorPicker.jsx';
 
-const App = () => <GoodButton />;
+const App = () => <ColorPicker />;
 
 export default App;

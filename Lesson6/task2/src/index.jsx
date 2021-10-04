@@ -2,6 +2,6 @@ import ReactDOM from 'react-dom';
 import React from 'react';
 
 import './index.scss';
-import App from './App.jsx';
+import Mailbox from './Mailbox.jsx';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<Mailbox unreadMessages={['d']} />, document.getElementById('root'));

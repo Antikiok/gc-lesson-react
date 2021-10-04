@@ -1,5 +1,10 @@
 module.exports = {
-  extends: ['eslint-config-airbnb-base', 'prettier', 'plugin:react/recommended'],
+  extends: [
+    'eslint-config-airbnb-base',
+    'prettier',
+    'eslint:recommended',
+    'plugin:react/recommended',
+  ],
   parser: 'babel-eslint',
   env: {
     es6: true,
@@ -18,7 +23,7 @@ module.exports = {
     'import/extensions': 0,
     'import/prefer-default-export': 0,
     'no-console': 0,
-    'import/no-extraneous-dependencies': 'off',
-    'react/prop-types': 'off',
+    'react/prop-types': 0,
+    'import/no-unresolved': 0,
   },
 };

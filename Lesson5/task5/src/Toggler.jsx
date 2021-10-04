@@ -8,7 +8,8 @@ class Toggler extends React.Component {
       text: 'Off',
     };
   }
-  swithToggler = state => {
+
+  swithToggler = () => {
     if (this.state.toggled) {
       this.setState(state => ({
         toggled: !state.toggled,

@@ -12,12 +12,12 @@ class Toggler extends React.Component {
     if (this.state.toggled) {
       this.setState(state => ({
         toggled: !state.toggled,
-        text: 'On',
+        text: 'Off',
       }));
     } else {
       this.setState(state => ({
         toggled: !state.toggled,
-        text: 'Off',
+        text: 'On',
       }));
     }
   };

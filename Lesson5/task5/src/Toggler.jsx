@@ -24,7 +24,7 @@ class Toggler extends React.Component {
 
   render() {
     return (
-      <button className={'fancy-button'} onClick={this.swithToggler}>
+      <button className={'toggler'} onClick={this.swithToggler}>
         {this.state.text}
       </button>
     );

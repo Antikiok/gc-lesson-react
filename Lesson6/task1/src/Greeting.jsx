@@ -4,7 +4,7 @@ import GuestGreeting from './GuestGreeting.jsx';
 
 const Greeting = props => {
   if (props.isLoggedIn) {
-    return <UserGreeting />;
+    return (<UserGreeting />);
   }
   return <GuestGreeting />;
 };

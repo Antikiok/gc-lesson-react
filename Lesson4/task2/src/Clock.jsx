@@ -12,7 +12,6 @@ const formatedOffsetTime = offset => formateTime(getTimeWithOffset(offset));
 
 class Clock extends React.Component {
   constructor(props) {
-    console.log(props);
     super(props);
     this.state = {
       offset: formatedOffsetTime(this.props.offset),

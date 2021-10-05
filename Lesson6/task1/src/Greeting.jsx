@@ -2,9 +2,9 @@ import React from 'react';
 import UserGreeting from './UserGreeting.jsx';
 import GuestGreeting from './GuestGreeting.jsx';
 
-const Greeting = props => {
-  if (props.isLoggedIn) {
-    return (<UserGreeting />);
+const Greeting = ({ isLoggedIn }) => {
+  if (isLoggedIn) {
+    return <UserGreeting />;
   }
   return <GuestGreeting />;
 };

@@ -1,6 +1,6 @@
 import React from 'react';
-import ColorPicker from './ColorPicker.jsx';
+import Auth from './Auth.jsx';
 
-const App = () => <ColorPicker />;
+const App = () => <Auth />;
 
 export default App;

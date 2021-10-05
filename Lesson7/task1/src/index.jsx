@@ -1,7 +1,8 @@
 import ReactDOM from 'react-dom';
 import React from 'react';
 
-import './index.scss';
-import Auth from './Auth.jsx';
+import NumbersList from './NumbersList.jsx';
 
-ReactDOM.render(<Auth />, document.getElementById('root'));
+const numbers = [1, 2, 3, 4, 5];
+
+ReactDOM.render(<NumbersList numbers={numbers} />, document.getElementById('root'));

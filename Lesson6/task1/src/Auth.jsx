@@ -1,5 +1,7 @@
 import React from 'react';
 import Greeting from './Greeting.jsx';
+import Login from './Login.jsx';
+import Logout from './Logout.jsx';
 
 class Auth extends React.Component {
   constructor(props) {
@@ -23,21 +25,17 @@ class Auth extends React.Component {
   };
 
   render() {
-    const button = this.state.isLoggedIn ? (
-      <button className="btn" onClick={this.handleLogout}>
-        Logout
-      </button>
-    ) : (
-      <button className="btn" onClick={this.handleLogin}>
-        Login
-      </button>
-    );
-
     return (
-      <div className="panel">
-        <Greeting isLoggedIn={this.state.isLoggedIn} />
-        {button}
-      </div>
+      <>
+        <div className="panel">
+          <Greeting isLoggedIn={this.state.isLoggedIn} />
+          {this.state.isLoggedIn ? (
+            <Logout isLogout={this.handleLogout} />
+          ) : (
+            <Login isLogin={this.handleLogin} />
+          )}
+        </div>
+      </>
     );
   }
 }

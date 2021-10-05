@@ -19,14 +19,6 @@ body {
   align-items: center;
 }
 
-.login {
-  background-color: green;
-}
-
-.logout {
-  background-color: cornflowerblue;
-}
-
 .btn {
   height: 48px;
   color: #fff;
@@ -37,4 +29,10 @@ body {
   text-transform: uppercase;
   padding: 8px;
   cursor: pointer;
+  &__login {
+    background-color: green;
+  }
+  &__logout {
+    background-color: cornflowerblue;
+  }
 }

@@ -1,6 +1,6 @@
 import React from 'react';
-import ColorPicker from './ColorPicker.jsx';
+import Status from './Status.jsx';
 
-const App = () => <ColorPicker />;
+const App = () => <Status isOnline={false} />;
 
 export default App;

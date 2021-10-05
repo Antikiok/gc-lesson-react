@@ -1,6 +1,6 @@
 import React from 'react';
-import ColorPicker from './ColorPicker.jsx';
+import Page from './Page.jsx';
 
-const App = () => <ColorPicker />;
+const App = () => <Page />;
 
 export default App;

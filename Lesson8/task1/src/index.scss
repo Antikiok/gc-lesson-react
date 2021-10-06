@@ -13,38 +13,28 @@ body {
   align-items: center;
 }
 
-.users {
-  list-style-type: none;
-  padding: 0;
-}
-
-.user {
-  margin: 8px;
-  width: 150px;
+.panel {
   display: flex;
-
-  &__age {
-    font-weight: 700;
-    opacity: 0.5;
-    margin-left: auto;
-  }
-}
-
-.pagination {
-  display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
 }
 
+.login {
+  background-color: green;
+}
+
+.logout {
+  background-color: cornflowerblue;
+}
+
 .btn {
-  height: 32px;
+  height: 48px;
   color: #fff;
   border-radius: 8px;
-  width: 64px;
+  width: 120px;
   outline: none;
   border: none;
   text-transform: uppercase;
   padding: 8px;
   cursor: pointer;
-  background-color: green;
 }

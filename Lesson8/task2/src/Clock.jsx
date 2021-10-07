@@ -16,16 +16,21 @@ class Clock extends React.Component {
     this.state = {
       offset: formatedOffsetTime(this.props.offset),
     };
+  }
 
-    setInterval(() => {
+  componentDidMount() {
+    this.interval = setInterval(() => {
       this.setState({
         offset: formatedOffsetTime(this.props.offset),
       });
     }, 1000);
   }
 
+  componentWillUnmount() {
+    clearInterval(this.interval);
+  }
+
   render() {
-    console.log(this.state.offset);
     return (
       <div className="clock">
         <div className="clock__location">{this.props.location}</div>

@@ -14,6 +14,11 @@ class ConnectionStatus extends React.Component {
     window.addEventListener('offline', this.networkStatus(false));
   }
 
+  componentWillUnmount() {
+    window.removeEventListener('online', this.networkStatus(true));
+    window.removeEventListener('offline', this.networkStatus(false));
+  }
+
   networkStatus = status =>
     status ? this.setState({ isOnline: true }) : this.setState({ isOnline: true });
 

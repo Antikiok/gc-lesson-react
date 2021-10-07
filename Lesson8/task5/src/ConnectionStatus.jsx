@@ -20,14 +20,14 @@ class ConnectionStatus extends React.Component {
   }
 
   networkStatus = status =>
-    status ? this.setState({ isOnline: true }) : this.setState({ isOnline: true });
+    status ? this.setState({ isOnline: true }) : this.setState({ isOnline: false });
 
   render() {
     const { isOnline } = this.state;
     if (isOnline) {
-      return <div className="status">Online</div>;
+      return <div className="status status_offline">Offline</div>;
     }
-    return <div className="status status_offline">Offline</div>;
+    return <div className="status">Online</div>;
   }
 }
 

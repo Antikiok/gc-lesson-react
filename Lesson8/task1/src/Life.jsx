@@ -16,6 +16,7 @@ class Life extends React.Component {
 
   componentDidUpdate() {
     console.log('componentDidUpdate(prevProps, prevState): some updates based on new props');
+    return true;
   }
 
   componentWillUnmount() {

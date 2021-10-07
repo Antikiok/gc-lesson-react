@@ -10,16 +10,16 @@ class Life extends React.Component {
     console.log('componentDidMount: API calls, subscriptions');
   }
 
-  // shouldComponentUpdate() {
-  //   console.log('shouldComponentUpdate(nextProps, nextState): decide to render or not to render');
-  // }
-
   componentDidUpdate() {
     console.log('componentDidUpdate(prevProps, prevState): some updates based on new props');
   }
 
   componentWillUnmount() {
     console.log('componentWillUnmount(): cleanup before DOM related to component will be removed');
+  }
+
+  shouldComponentUpdate() {
+    console.log('shouldComponentUpdate(nextProps, nextState): decide to render or not to render');
   }
 
   render() {

@@ -1,3 +1,5 @@
+/* eslint-disable class-methods-use-this */
+/* eslint-disable no-alert */
 import React from 'react';
 
 class GoodButton extends React.Component {

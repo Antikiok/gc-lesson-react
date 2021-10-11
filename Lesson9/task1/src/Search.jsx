@@ -9,7 +9,7 @@ class Search extends React.Component {
 
   search = event => {
     event.preventDefault();
-    alert(this.state.value);
+    alert(`Search text: ${this.state.value}`);
   };
 
   render() {

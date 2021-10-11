@@ -11,6 +11,7 @@ class UserForm extends React.Component {
   };
 
   setRef = node => {
+    console.log(node);
     this.formRef = node;
   };
 

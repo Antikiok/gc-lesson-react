@@ -2,6 +2,6 @@ import ReactDOM from 'react-dom';
 import React from 'react';
 
 import './index.scss';
-import ConnectionStatus from './ConnectionStatus.jsx';
+import Game from './Game.jsx';
 
-ReactDOM.render(<ConnectionStatus />, document.getElementById('root'));
+ReactDOM.render(<Game />, document.getElementById('root'));

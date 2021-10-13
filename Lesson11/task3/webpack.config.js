@@ -9,11 +9,11 @@ module.exports = (env, argv) => {
   const config = {
     mode: 'development',
     entry: {
-      main: path.resolve(__dirname, './src/index.js'),
+      main: path.resolve(__dirname, './src/index.jsx'),
     },
     output: {
       path: path.resolve(__dirname, './dist'),
-      filename: 'bundle.js',
+      filename: '[name].bundle.js',
     },
     module: {
       rules: [

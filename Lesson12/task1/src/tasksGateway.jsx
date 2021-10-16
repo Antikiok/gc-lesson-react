@@ -15,9 +15,10 @@ export const createTask = taskData =>
 
 export const fetchTasksList = () =>
   fetch(baseUrl).then(res => {
-    if (res.ok) {
-      return res.json();
+    if (!res.ok) {
+      throw new Error('Failed to fetch tasks list');
     }
+    return res.json();
   });
 
 export const updateTask = (taskId, taskData) =>
